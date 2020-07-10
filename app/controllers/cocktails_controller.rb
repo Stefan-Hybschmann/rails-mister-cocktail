@@ -1,8 +1,8 @@
 class CocktailsController < ApplicationController
-  before_action :set_cocktail, only: [:show, :new]
+  before_action :set_cocktail, only: [:show]
 
   def index
-    Cocktail.all
+    @cocktails = Cocktail.all
   end
 
   def show
@@ -21,7 +21,6 @@ class CocktailsController < ApplicationController
       render :new
     end
   end
-
 
   private
 

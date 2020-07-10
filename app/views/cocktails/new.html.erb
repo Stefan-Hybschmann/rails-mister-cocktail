@@ -1,0 +1,7 @@
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <!-- add image input -->
+  <%= f.submit "Submit cocktail", class: "btn btn-primary" %>
+<% end %>
+<button class="btn btn-primary"> <%= link_to 'Go back', cocktails_path %></button>
+
